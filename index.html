@@ -117,7 +117,7 @@ nav a:hover{
       rgba(250,248,245,.30),
       rgba(250,248,245,.80)
     ),
-    url("1HXUYsgZ-H7txSZ2S1pGMHlcD5WpSxZyk")
+    url("abertura.jpg")
     center/cover;
 }
 
@@ -257,7 +257,7 @@ section{
 .story-image{
   height:570px;
   background:
-    url("https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=90")
+    url("foto-casal1.jpg")
     center/cover;
 }
 
@@ -362,6 +362,7 @@ section{
   height:330px;
   object-fit:cover;
   transition:.4s;
+  display:block;
 }
 
 .gallery img:hover{
@@ -1056,17 +1057,41 @@ footer p{
 
     <div class="gallery">
 
-      <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85">
+      <img
+        src="foto-casal1.jpg"
+        alt="Guilherme e Ana Victoria"
+        loading="lazy"
+      >
 
-      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=85">
+      <img
+        src="foto-casal2.jpg"
+        alt="Guilherme e Ana Victoria"
+        loading="lazy"
+      >
 
-      <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=1000&q=85">
+      <img
+        src="foto-casal3.jpg"
+        alt="Guilherme e Ana Victoria"
+        loading="lazy"
+      >
 
-      <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1000&q=85">
+      <img
+        src="foto-casal4.jpg"
+        alt="Guilherme e Ana Victoria"
+        loading="lazy"
+      >
 
-      <img src="https://images.unsplash.com/photo-1460978812857-470ed1c77af0?auto=format&fit=crop&w=1000&q=85">
+      <img
+        src="foto-casal5.jpg"
+        alt="Guilherme e Ana Victoria"
+        loading="lazy"
+      >
 
-      <img src="https://images.unsplash.com/photo-1544078751-58fee2d8a03b?auto=format&fit=crop&w=1000&q=85">
+      <img
+        src="foto-casal6.jpg"
+        alt="Guilherme e Ana Victoria"
+        loading="lazy"
+      >
 
     </div>
 
@@ -1515,7 +1540,8 @@ function copyPix(){
 
   const pix =
     document.getElementById("pixKey")
-    .textContent;
+    .textContent
+    .trim();
 
   navigator.clipboard.writeText(pix);
 
